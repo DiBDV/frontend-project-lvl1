@@ -18,6 +18,6 @@
   "homepage": "https://github.com/DiBDV/frontend-project-lvl1#readme",
   "type": "module"
   "bin": {
-  "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js"
   }
 }
