@@ -20,6 +20,7 @@ jobs:
     steps:
       - name: Make lint
         run: |
+          cd ${{ github.workspace }}
           ls Makefile 
           make lint ${{ github.workspace }}
 
