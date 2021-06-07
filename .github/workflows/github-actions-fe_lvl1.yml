@@ -18,4 +18,5 @@ jobs:
   Make-Lint:
     runs-on: ubuntu-lates
     steps:
-      - run: make lint
+      - name: Make lint
+        run: make lint
