@@ -19,4 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Make lint
-        run: make lint ${{ github.workspace }}
+        run: |
+          ls Makefile 
+          make lint ${{ github.workspace }}
+
+
