@@ -18,6 +18,9 @@ jobs:
   Make-Lint:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository content
+        uses: actions/checkout@v2 # Checkout the repository content to github runner.
+      
       - name: Make lint
         run: |
           cd ${{ github.workspace }}
