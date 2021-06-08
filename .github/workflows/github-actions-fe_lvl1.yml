@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Checkout repository content
         uses: actions/checkout@v2 # Checkout the repository content to github runner.
-      - name: Set up -node-
+      - name: Set up the Node
         uses: actions/setup-node@v1 # Install the "node" software package on the runner to give you access to the "npm" command.
  
       - name: Make lint
