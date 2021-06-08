@@ -22,8 +22,7 @@
   },
   "dependencies": {
     "eslint-config-defaults": "^9.0.0",
-    "readline-sync": "^1.4.10",
-    "eslint-config-airbnb-base": "^14.2.1"
+    "readline-sync": "^1.4.10"
   },
   "devDependencies": {
     "eslint": "^7.28.0",
