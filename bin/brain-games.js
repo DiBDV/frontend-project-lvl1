@@ -5,5 +5,3 @@ import { greating } from '../src/cli.js';
 console.log('Welcome to the Brain Games!');
 
 greating();
-
-//test run of git actions
