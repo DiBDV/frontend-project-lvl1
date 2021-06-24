@@ -16,8 +16,7 @@ for (let i = 0; i < 3; i += 1) {
   if (expectedAnswer !== userAnswer) {
     console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${expectedAnswer}'.
     Let's try again, ${getName.name}`);
-    // return ;
+    break;
   }
-
-  console.log(`Congratulations, ${getName.name}`);
 }
+console.log(`Congratulations, ${getName.name}`);
