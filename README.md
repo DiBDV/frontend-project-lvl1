@@ -7,7 +7,9 @@
 
 
 #### Terminal session of the game
-    Example can be see on [asciinema] (https://asciinema.org/a/QKPEbokO1seKYIDHpYhe2k2Om).
+
+Example can be see on [asciinema] (https://asciinema.org/a/QKPEbokO1seKYIDHpYhe2k2Om).
 
 #### Versioning guidelines
-    Project versioning is following https://semver.org/
+
+Project versioning is following https://semver.org/
