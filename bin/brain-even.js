@@ -1,10 +1,8 @@
 #!/usr/bin/env node
 
-// ??? find out, how to make brain-games go first before brain-enen.js ???
-// import "brain-games.js";
+import { isEven, greeting } from '../src/brain-even-cli.js';
 
-import isEven from '../src/brain-even-cli.js';
-
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
+console.log('Welcome to the Brain Games!');
+greeting();
 
 isEven();
