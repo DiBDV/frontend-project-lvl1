@@ -6,7 +6,8 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
 
 
-#### Project versioning is following https://semver.org/
+#### Terminal session of the game
+    Example can be see on [asciinema] (https://asciinema.org/a/QKPEbokO1seKYIDHpYhe2k2Om).
 
-#### asciinema of the game
-Example can be see on [asciinema] (https://asciinema.org/a/QKPEbokO1seKYIDHpYhe2k2Om).
+#### Versioning guidelines
+    Project versioning is following https://semver.org/
