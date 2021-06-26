@@ -7,3 +7,6 @@
 
 
 ### Project versioning is following https://semver.org/
+
+###### asciinema of the game
+Example can be see on [asciinema] (https://asciinema.org/a/QKPEbokO1seKYIDHpYhe2k2Om).
