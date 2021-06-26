@@ -12,4 +12,4 @@ Example can be see on [asciinema](https://asciinema.org/a/QKPEbokO1seKYIDHpYhe2k
 
 #### Versioning guidelines
 
-Project versioning is following [Semver](https://semver.org/).
+Project versioning is following [Semantic Versioning 2.0.0](https://semver.org/).
