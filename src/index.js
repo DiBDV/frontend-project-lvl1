@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 
 export const isEven = (number1) => number1 % 2 === 0;
 
-export const calculationResult = (result) => number1 + operation + number2;
+export const calculationResult = (result) => result;
 
 // User greeting
 export const getName = () => readlineSync.question('May I have your name? ');
@@ -16,9 +16,10 @@ export const greeting = () => {
   for (let i = 0; i < 3; i += 1) {
     const number1 = Math.floor(Math.random() * 100);
     const number2 = Math.floor(Math.random() * 100);
-    const operation = ['*', '+', '-'][Math.floor(Math.random() * 1)];
+    const operation = [' * ', ' + ', ' - '][Math.floor(Math.random() * 3)];
+    const result  = number1 + operation + number2;
 
-    console.log(`Question: ${number1} + ${operation} + ${number2}`);
+    console.log(`Question: ${result}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
     const expectedAnswer = calculationResult(result) ? 'yes' : 'no';
