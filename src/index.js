@@ -17,7 +17,7 @@ export const greeting = () => {
     const number1 = Math.floor(Math.random() * 100);
     const number2 = Math.floor(Math.random() * 100);
     const operation = [' * ', ' + ', ' - '][Math.floor(Math.random() * 3)];
-    const result  = number1 + operation + number2;
+    const result = number1 + operation + number2;
 
     console.log(`Question: ${result}`);
     const userAnswer = readlineSync.question('Your answer: ');
@@ -27,9 +27,7 @@ export const greeting = () => {
       console.log('Correct!');
     }
     if (expectedAnswer !== userAnswer) {
-      console.log(
-        `'${userAnswer}' is wrong answer ;(. Correct answer was '${expectedAnswer}'.`
-      );
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${expectedAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
       return;
     }
