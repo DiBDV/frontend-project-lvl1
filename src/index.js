@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 
 export const isEven = (number1) => number1 % 2 === 0;
 
-export const calculationResult = (result) => result;
+export const calculationResult = (result) => eval(result);
 
 // User greeting
 export const getName = () => readlineSync.question('May I have your name? ');
@@ -22,15 +22,16 @@ export const greeting = () => {
     console.log(`Question: ${result}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    const expectedAnswer = calculationResult(result) ? 'yes' : 'no';
+    const expectedAnswer = calculationResult(result);
     if (expectedAnswer === userAnswer) {
       console.log('Correct!');
     }
-    if (expectedAnswer !== userAnswer) {
+    if (expectedAnswer !== eval(result)) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${expectedAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
       return;
     }
+  
   }
   // Congrats to user on successful game.
   console.log(`Congratulations, ${name}!`);
