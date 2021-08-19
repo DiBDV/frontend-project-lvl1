@@ -2,7 +2,17 @@ import readlineSync from 'readline-sync';
 
 export const isEven = (number1) => number1 % 2 === 0;
 
-export const calculationResult = (number1, operation, number2) => mathExpression;
+export const calculationResult = (number1, operation, number2) => {
+  if (operation === '+') {
+    return number1 + number2;
+  }
+  if (operation === '-') {
+    return number1 - number2;
+  }
+  if (operation === '*') {
+    return number1 * number2;
+  }
+};
 
 const number1 = Math.floor(Math.random() * 100);
 const number2 = Math.floor(Math.random() * 100);
