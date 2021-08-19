@@ -31,7 +31,7 @@ export const greeting = () => {
       console.log(`Let's try again, ${name}!`);
       return;
     }
-  
+
   }
 
   // Congrats to user on successful game.
