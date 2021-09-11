@@ -3,21 +3,21 @@ import readlineSync from 'readline-sync';
 export const isEven = (number1) => number1 % 2 === 0;
 
 export const calculationResult = (number1, operation, number2) => {
-  if (operation === '+') {
-    return number1 + number2;
-  }
-  if (operation === '-') {
-    return number1 - number2;
-  }
-  if (operation === '*') {
-    return number1 * number2;
+
+  switch (operation) {
+    case '+':
+      return number1 + number2;
+    case '-':
+     return number1 - number2;
+    case '*':
+      return number1 * number2;
   }
 };
 
 const number1 = Math.floor(Math.random() * 100);
 const number2 = Math.floor(Math.random() * 100);
 const operation = [' * ', ' + ', ' - '][Math.floor(Math.random() * 3)];
-const mathExpression = number1 + operation + number2;
+const mathExpression = Number(number1) + operation + Number(number2);
 
 // User greeting
 export const getName = () => readlineSync.question('May I have your name? ');
@@ -32,7 +32,8 @@ export const greeting = () => {
     console.log(`Question: ${mathExpression}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    const expectedAnswer = calculationResult(mathExpression);
+    const expectedAnswer = calculationResult(parseInt(mathExpression));
+    console.log(expectedAnswer);
     if (expectedAnswer === userAnswer) {
       console.log('Correct!');
     }
