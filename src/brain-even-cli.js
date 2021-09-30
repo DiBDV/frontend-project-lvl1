@@ -1,3 +1,4 @@
+import startGame from './index.js';
 import readlineSync from 'readline-sync';
 
 export const isEven = (number) => number % 2 === 0;

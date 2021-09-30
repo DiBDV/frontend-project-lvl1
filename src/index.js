@@ -1,50 +1,46 @@
-import readlineSync from 'readline-sync';
+import readlineSync, { question } from 'readline-sync';
 
-export const isEven = (number1) => number1 % 2 === 0;
+console.log('Welcome to the Brain Games!');
 
-export const calculationResult = (number1, operation, number2) => {
-
-  switch (operation) {
-    case '+':
-      return number1 + number2;
-    case '-':
-     return number1 - number2;
-    case '*':
-      return number1 * number2;
-  }
+export const random = (min, max) => {
+  return Math.floor(Math.random() * ((max + 1) - min) + min);
 };
 
-const number1 = Math.floor(Math.random() * 100);
-const number2 = Math.floor(Math.random() * 100);
-const operation = [' * ', ' + ', ' - '][Math.floor(Math.random() * 3)];
-const mathExpression = Number(number1) + operation + Number(number2);
-
-// User greeting
-export const getName = () => readlineSync.question('May I have your name? ');
-export const greeting = () => {
+const startGame = (gameDescription, calculationResult, questionGenerator) => {
+  const getName = () => readlineSync.question('May I have your name? ');
   const name = getName();
   console.log(`Hello, ${name}!`);
-  console.log('What is the result of the expression?');
+  console.log(gameDescription);
 
-  // questions generation
+  // a question will be generated 3 times
   for (let i = 0; i < 3; i += 1) {
-
-    console.log(`Question: ${mathExpression}`);
+    
+    console.log(`Question: ${questionGenerator.question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    const expectedAnswer = calculationResult(parseInt(mathExpression));
-    console.log(expectedAnswer);
-    if (expectedAnswer === userAnswer) {
-      console.log('Correct!');
-    }
-    if (expectedAnswer !== mathExpression) {
+    // here we're comparing the userAnswer with the right answer
+    if (questionGenerator.expectedAnswer !== userAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${expectedAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
       return;
     }
-
+    console.log('Correct!');
   }
-
   // Congrats to user on successful game.
   console.log(`Congratulations, ${name}!`);
 };
+
+export default startGame;
+
+
+//движок должен принимать результат и вопрос; вопрос формирует игра;
+// index.js = движок
+// brain-calc.js = игра
+// brain-calc-cli.js = логика игры
+
+// общие части игры, которые должны быть в движке:
+// + приветствие; 
+// + спрашиваем имя;
+// - задаем вопрос участнику;
+// - подтверждение верного ответа;
+// - сообщение об ошибке

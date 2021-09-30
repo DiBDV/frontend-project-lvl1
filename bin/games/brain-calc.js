@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 
-import { calculationResult, greeting } from '../../src/index.js';
+import { runCalcGame } from '../../src/brain-calc-cli.js';
 
-console.log('Welcome to the Brain Games!');
-greeting();
+runCalcGame();
 
-calculationResult();

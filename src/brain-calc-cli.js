@@ -1,27 +1,28 @@
-import readlineSync from 'readline-sync';
+import startGame from './index.js';
+import random from './index.js';
 
-export const getName = () => readlineSync.question('May I have your name? ');
-export const greeting = () => {
-  const name = getName();
-  console.log(`Hello, ${name}!`);
-  console.log('What is the result of the expression?');
-
-  for (let i = 0; i < 3; i += 1) {
-    const number1 = Math.floor(Math.random() * 100);
-    const number2 = Math.floor(Math.random() * 100);
-
-    console.log(`Question: ${number}`);
-    const userAnswer = readlineSync.question('Your answer: ');
-
-    const expectedAnswer = isEven(number) ? 'yes' : 'no';
-    if (expectedAnswer === userAnswer) {
-      console.log('Correct!');
-    }
-    if (expectedAnswer !== userAnswer) {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${expectedAnswer}'.`);
-      console.log(`Let's try again, ${name}!`);
-      return;
-    }
+const calculationResult = (number1, operation, number2) => {
+  switch (operation) {
+    case '+':
+      return number1 + number2;
+    case '-':
+     return number1 - number2;
+    case '*':
+      return number1 * number2;
+    default:
+      throw new Error(`Unexpected operation: ${operation}`)
   }
-  console.log(`Congratulations, ${name}!`);
-}
+};
+
+export const questionGenerator = () => {
+  const number1 = random(0, 10);
+  const number2 = random(0, 10);
+  const operations = ['*', '+', '-'];
+  const operation = operations[random(0, operations.length-1)];
+  const question = `${number1} ${operation} ${number2}`;
+  const expectedAnswer = String(calculationResult(number1, operation, number2));
+};
+
+const gameDescription = "What is the result of the expression?"
+
+export const runCalcGame = () => startGame(gameDescription, calculationResult, questionGenerator)
