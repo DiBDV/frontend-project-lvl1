@@ -3,10 +3,10 @@ import readlineSync from 'readline-sync';
 const roundCount = 3;
 
 /**
- * 
+ *
  * @param {*} gameDescription  описание игры
  * @param {*} questionGenerator генератор вопроса к игре
- * @returns 
+ * @returns
  */
 
 const startGame = (gameDescription, questionGenerator) => {

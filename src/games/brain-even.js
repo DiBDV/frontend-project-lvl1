@@ -1,18 +1,16 @@
 import startGame from '../index.js';
 import random from '../utils.js';
 
-const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".'
+const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const calculationResult = (number) => number % 2 === 0;
 
 export const questionGenerator = () => {
-  const number = random(2 , 100);
+  const number = random(2, 100);
   const question = number % 2;
   const expectedAnswer = calculationResult(number) ? 'yes' : 'no';
   return { question, expectedAnswer };
 };
-
-
 
 //   for (let i = 0; i < 3; i += 1) {
 //     const number = Math.floor(Math.random() * 100);
@@ -32,4 +30,4 @@ export const questionGenerator = () => {
 //   console.log(`Congratulations, ${name}!`);
 // };
 
-export const runIsEvenGame = () => startGame(gameDescription, questionGenerator)
+export const runIsEvenGame = () => startGame(gameDescription, questionGenerator);
