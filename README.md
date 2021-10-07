@@ -8,7 +8,9 @@
 
 #### Terminal session of the game
 
-Example can be see on [asciinema](https://asciinema.org/a/QKPEbokO1seKYIDHpYhe2k2Om).
+You can see blow examples of the games:
+- [brain-even](https://asciinema.org/a/QKPEbokO1seKYIDHpYhe2k2Om).
+- [brain-calc](https://asciinema.org/a/0NtLTo5szi4DCUuPfEYYoJBtO).
 
 #### Versioning guidelines
 
