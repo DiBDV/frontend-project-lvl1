@@ -11,7 +11,7 @@ const roundCount = 3;
 
 const startGame = (gameDescription, questionGenerator) => {
   console.log('Welcome to the Brain Games!');
-  const getName = () => readlineSync.question('May I have your name?');
+  const getName = () => readlineSync.question('May I have your name? ');
   const name = getName();
   console.log(`Hello, ${name}!`);
   console.log(gameDescription);
