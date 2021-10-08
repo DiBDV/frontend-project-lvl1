@@ -18,4 +18,6 @@ const questionGenerator = () => {
   return { question, expectedAnswer };
 };
 
-export const runGCDGame = () => startGame(gameDescription, questionGenerator);
+const runGCDGame = () => startGame(gameDescription, questionGenerator);
+
+export default runGCDGame;
