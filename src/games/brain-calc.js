@@ -1,7 +1,7 @@
 import startGame from '../index.js';
 import random from '../utils.js';
 
-const calculationResult = (number1, operation, number2) => {
+const calculate = (number1, operation, number2) => {
   switch (operation) {
     case '+':
       return number1 + number2;
@@ -20,7 +20,7 @@ export const questionGenerator = () => {
   const operations = ['*', '+', '-'];
   const operation = operations[random(0, operations.length - 1)];
   const question = `${number1} ${operation} ${number2}`;
-  const expectedAnswer = String(calculationResult(number1, operation, number2));
+  const expectedAnswer = String(calculate(number1, operation, number2));
 
   return { question, expectedAnswer };
 };
