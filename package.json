@@ -1,6 +1,6 @@
 {
   "name": "dibdv-frontend-project-lvl1",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "description": "[![Actions Status](https://github.com/DiBDV/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/DiBDV/frontend-project-lvl1/actions)",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,8 @@
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
     "brain-calc": "bin/brain-calc.js",
-    "brain-gcd": "bin/brain-gcd.js"
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-progression": "bin/brain-progression.js"
   },
   "dependencies": {
     "eslint-config-defaults": "^9.0.0",
