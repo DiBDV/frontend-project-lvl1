@@ -14,6 +14,7 @@ See below asciinema of the games:
 - [brain-calc](https://asciinema.org/a/0NtLTo5szi4DCUuPfEYYoJBtO)
 - [brain-gcd](https://asciinema.org/a/P1NoEiBp8LkG9cSNIyHcWTDEA)
 - [brain-progression](https://asciinema.org/a/7WH9gZDJOAbeg6EF45OFnt1iY)
+- [brain-prime](https://asciinema.org/a/SmNy7I92TUWwT3l6Ya5z1Xd3E)
 
 ### Versioning guidelines
 
