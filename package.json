@@ -1,6 +1,6 @@
 {
-  "name": "dibdv-frontend-project-lvl1",
-  "version": "0.1.5",
+  "name": "@hexlet/code",
+  "version": "0.1.7",
   "description": "[![Actions Status](https://github.com/DiBDV/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/DiBDV/frontend-project-lvl1/actions)",
   "main": "index.js",
   "scripts": {

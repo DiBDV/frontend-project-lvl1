@@ -13,7 +13,7 @@ const isPrime = (num) => {
 const questionGenerator = () => {
   const num = random(2, 100);
   const question = num;
-  const expectedAnswer = String(isPrime(num)) ? 'yes' : 'no';
+  const expectedAnswer = isPrime(num) ? 'yes' : 'no';
   return { question, expectedAnswer };
 };
 
