@@ -1,10 +1,24 @@
-### Hexlet tests and linter status:
+### Hexlet first project "brain games"
+
 [![Actions Status](https://github.com/DiBDV/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/DiBDV/frontend-project-lvl1/actions)
 [![Github Actions Status](https://github.com/DiBDV/frontend-project-lvl1/actions/workflows/github-actions-fe_lvl1.yml/badge.svg)](https://github.com/DiBDV/frontend-project-lvl1/actions)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
 
+### Project description
+
+The main aim of the project is to show initial knowledge about the JavaScript. The following aspects were covered in the games:
+- 'for' loops;
+- 'while' loops;
+- arrays;
+- node environtment setup;
+- Git Actions;
+- Linter.
+
+## Requirements
+
+All games are CLI based and can be launched in your terminal. To run a game Node.js is expected to be installed.
 
 ### Terminal session of the game
 
