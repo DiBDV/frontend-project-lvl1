@@ -24,7 +24,7 @@ const questionGenerator = () => {
   const step = random(1, 10);
   const length = random(5, 10);
   const progression = createProgression(start, length, step);
-  const randomProgressionIndex = random(0, progression.length);
+  const randomProgressionIndex = random(0, progression.length - 1);
   const expectedAnswer = String(progression[randomProgressionIndex]);
   const question = hideProgressionElement(progression, randomProgressionIndex).join(' ');
   return { question, expectedAnswer };
