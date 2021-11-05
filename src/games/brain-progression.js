@@ -1,5 +1,5 @@
 import startGame from '../index.js';
-import random from '../utils.js';
+import { random } from '../utils.js';
 
 const gameDescription = 'What number is missing in the progression?';
 
@@ -30,6 +30,5 @@ const questionGenerator = () => {
   return { question, expectedAnswer };
 };
 
-const runProgressionGame = () => startGame(gameDescription, questionGenerator);
-
-export default runProgressionGame;
+// eslint-disable-next-line
+export const runProgressionGame = () => startGame(gameDescription, questionGenerator);
