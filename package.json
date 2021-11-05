@@ -12,6 +12,7 @@
   },
   "author": "Bedov Dmitrii",
   "license": "ISC",
+  "keywords": ["hexlet", "bedov", "firstProject"],
   "bugs": {
     "url": "https://github.com/DiBDV/frontend-project-lvl1/issues"
   },
