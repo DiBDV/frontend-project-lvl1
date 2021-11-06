@@ -3,8 +3,8 @@
 [![Actions Status](https://github.com/DiBDV/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/DiBDV/frontend-project-lvl1/actions)
 [![Github Actions Status](https://github.com/DiBDV/frontend-project-lvl1/actions/workflows/github-actions-fe_lvl1.yml/badge.svg)](https://github.com/DiBDV/frontend-project-lvl1/actions)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/DiBDV/frontend-project-lvl1)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/DiBDV/frontend-project-lvl1)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/DiBDV/frontend-project-lvl1/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/DiBDV/frontend-project-lvl1/test_coverage)
 
 ### Project description
 
@@ -16,9 +16,32 @@ The main aim of the project is to show initial knowledge about the JavaScript. T
 - Git Actions;
 - Linter.
 
-## Requirements
+## System requirements
 
-All games are CLI based and can be launched in your terminal. To run a game Node.js is expected to be installed.
+All games are CLI based and can be launched in your terminal. The following programms are expected to be installed:
+
+- Node.js
+- GitHub CLI
+
+## How to install
+
+```sh
+mkdir braingames ~/Documents
+cd ~/Documents/braingames
+git clone git@github.com:DiBDV/frontend-project-lvl1.git
+```
+
+## How to run the games
+
+```sh
+cd ~/Documents/braingames/frontend-project-lvl1
+node bin/brain-games.js
+node bin/brain-calc.js
+node bin/brain-even.js
+node bin/brain-gcd.js
+node bin/brain-prime.js
+node bin/brain-progression.js
+```
 
 ### Terminal session of the game
 
