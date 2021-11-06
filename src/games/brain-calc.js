@@ -14,10 +14,11 @@ const calculate = (number1, operation, number2) => {
   }
 };
 
+const operations = ['*', '+', '-'];
+
 export const questionGenerator = () => {
   const number1 = random(0, 10);
   const number2 = random(0, 10);
-  const operations = ['*', '+', '-'];
   const operation = operations[random(0, operations.length - 1)];
   const question = `${number1} ${operation} ${number2}`;
   const expectedAnswer = String(calculate(number1, operation, number2));
